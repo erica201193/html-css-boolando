@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+header a {
+    color: #ffffff;
+    font-weight: bold;
+}
+.main-menu li {
+    height: 100%;
+    margin-right: 1rem;
+}
+.user-menu li {
+    margin-left: 10px;
+}
+/* Logo */
+.logo img {
+    width: 150px;
+}
+
+/* MAIN */
+main {
+    margin: 100px 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col {
+    width: calc( ( 100% / 3 ) - 10px );
+}
+
+/* CARD */
+.card {
+    margin-top: 30px;
+}
+
+/* CARD IMAGE */
+.product-img {
+    position: relative;
+}
+.hover-img {
+    display: none;
+}
+.product-img:hover .main-img {
+    display: none;
+}
+.product-img:hover .hover-img {
+    display: inline-block;
+}
+
+
+/* CARD FAV ICON */
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    padding: 10px 8px;
+}
+.heart-icon:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* LABELS */
+.labels-container {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+.label {
+    color: white;
+    padding: 5px 10px;
+
+}
+.discount {
+    background-color: red;
+}
+.sustainable {
+    background-color: green;
+}
+
+/* CARD DESCRIPTION */
+.product-brand-name {
+    font-size: 14px;
+}
+.product-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.discounted-price {
+    color: red;
+    font-weight: 700;
+}
+.full-price {
+    text-decoration: line-through;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    font-size: 0.7rem;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.footer-menu {
+    display: flex;
+}
+
+.footer-info li {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/* FOOTER SOCIALS LINK */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-social-icons {
+    font-size: 25px;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
